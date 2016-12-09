@@ -13,7 +13,7 @@ Quick start
     ```python
     INSTALLED_APPS = [
         ...
-        'polls',
+        'shortcodes',
     ]
     ```
 
