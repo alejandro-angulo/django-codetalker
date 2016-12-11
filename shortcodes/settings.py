@@ -7,7 +7,7 @@ SHORTCODES = {
 }
 """
 
-from django.conf import settings
+from django.conf import settings as project_settings
 
 DEFAULTS = {
     'SHORTCODE_DELIMETER': '@@',
@@ -19,7 +19,6 @@ DEFAULTS = {
 SETTINGS = {}
 for setting_name, setting_default in DEFAULTS.items():
     try:
-        SETTINGS.SHORTCODES[setting_name]
-        SETTINGS[setting_name] = SETTINGS.SHORTCODES[setting_name]
-    except AttributeError:
+        SETTINGS[setting_name] = project_settings.SHORTCODES[setting_name]
+    except (AttributeError, KeyError):
         SETTINGS[setting_name] = DEFAULTS[setting_name]
