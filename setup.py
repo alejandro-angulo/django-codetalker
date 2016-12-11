@@ -12,7 +12,7 @@ setup(
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
-    license='GPLv3',
+    license='LGPLv3',
     description='a Django app to provide WordPress-like'
                 'shortcode functionality.',
     long_description=README,
