@@ -16,9 +16,9 @@ setup(
     description='a Django app to provide WordPress-like'
                 'shortcode functionality.',
     long_description=README,
-    url='https://<github repo>',
+    url='https://github.com/vacuus/django-shortcodes',
     author='Alejandro Angulo',
-    author_email='e@mail.com',
+    author_email='ab.j13@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
