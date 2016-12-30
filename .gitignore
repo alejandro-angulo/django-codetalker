@@ -1,3 +1,18 @@
+# Optimized files
+__pycache__
+
+# Distribution/packaging
 dist/
 *.egg
 *.egg-info
+
+# Coverage reports
+htmlcov/
+cover/
+.coverage
+.cache
+*,cover
+
+# virtualenv
+env/
+venv/
