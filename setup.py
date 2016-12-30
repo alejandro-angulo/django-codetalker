@@ -8,7 +8,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-shortcodes',
+    name='django-codetalker',
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
@@ -16,9 +16,9 @@ setup(
     description='a Django app to provide WordPress-like'
                 'shortcode functionality.',
     long_description=README,
-    url='https://github.com/vacuus/django-shortcodes',
+    url='https://github.com/vacuus/django-codetalker',
     author='Alejandro Angulo',
-    author_email='ab.j13@gmail.com',
+    author_email='aab.j13@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

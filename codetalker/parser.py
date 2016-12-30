@@ -4,7 +4,7 @@ from django.conf import settings
 from django.utils.module_loading import module_has_submodule
 from importlib import import_module
 from os.path import dirname, basename, isfile
-from shortcodes.settings import SETTINGS
+from codetalker.settings import SETTINGS
 from sys import modules
 import glob
 import inspect

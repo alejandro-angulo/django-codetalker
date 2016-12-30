@@ -1,6 +1,6 @@
 include README.md
 include license
-recursive-include shortcodes/templatetags *
+recursive-include codetalker/templatetags *
 recursive-include docs *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
