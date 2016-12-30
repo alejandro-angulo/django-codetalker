@@ -1,8 +1,8 @@
 """
-Settings for shortcodes are namespaced in the SHORTCODES setting.
+Settings for codetalker are namespaced in the CODETALKER setting.
 For exmaple your project's `settings.py` file might looks like this:
 
-SHORTCODES = {
+CODETALKER = {
     'SHORTCODE_DELIMETER': '@@',
 }
 """
@@ -19,6 +19,6 @@ DEFAULTS = {
 SETTINGS = {}
 for setting_name, setting_default in DEFAULTS.items():
     try:
-        SETTINGS[setting_name] = project_settings.SHORTCODES[setting_name]
+        SETTINGS[setting_name] = project_settings.CODETALKER[setting_name]
     except (AttributeError, KeyError):
         SETTINGS[setting_name] = DEFAULTS[setting_name]
